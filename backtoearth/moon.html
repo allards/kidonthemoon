@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+<canvas id="myCanvas">
+	Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var landed = 0; 
+// navigator.vibrate(1000);
+
+windowWidth = window.innerWidth;
+windowHeight = window.innerHeight;
+
+canvas.width = windowWidth;
+canvas.height = windowHeight;
+
+var context = canvas.getContext('2d');
+var img = new Image();
+img.src = "img/moon.png";
+moonY = (canvas.width - 25)/ 2;
+moonX = (canvas.height - 25) /2;
+moonSize = 50;
+img.onload = function () {
+    context.drawImage(img, moonY, moonX, moonSize, moonSize);
+};
+
+handleMotion = function(event) {
+	moonX += 0.2 * event.gamma;
+	moonY += 0.2 * event.beta;
+}
+
+if (window.DeviceOrientationEvent) {
+  window.addEventListener('deviceorientation', handleMotion);
+}
+
+var FPS = 30;
+setInterval(function() {
+  update();
+  draw();
+}, 1000/FPS);
+
+
+function update() {
+	if (landed == 0 && moonSize > 200) {
+		// console.log("You landed");
+		// window.alert("You landed!");
+		landed = 1;
+	}
+	moonSize = moonSize * 1.01 ;
+	moonY = 0.9987 * moonY;
+	moonX = 0.998 * moonX;
+};
+
+function draw() {
+	context.clearRect(0, 0, windowWidth, windowHeight);
+    context.drawImage(img, moonY, moonX, moonSize, moonSize);
+};
+
+</script>
+
+</body>
+</html>

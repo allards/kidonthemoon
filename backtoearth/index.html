@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+<canvas id="myCanvas">
+	Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<audio autoplay loop>
+  <source src="sound/land.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var landed = 0; 
+// navigator.vibrate(1000);
+
+windowWidth = window.innerWidth;
+windowHeight = window.innerHeight;
+
+canvas.width = windowWidth;
+canvas.height = windowHeight;
+
+var context = canvas.getContext('2d');
+var img = new Image();
+img.src = "img/global.svg";
+earthY = (canvas.width - 25)/ 2;
+earthX = (canvas.height - 25) /2;
+earthSize = 50;
+img.onload = function () {
+    context.drawImage(img, earthY, earthX, earthSize, earthSize);
+};
+
+handleMotion = function(event) {
+	earthX += 	0.2 * event.gamma;
+	earthY += 0.2 * event.beta;
+}
+
+if (window.DeviceOrientationEvent) {
+  window.addEventListener('deviceorientation', handleMotion);
+}
+
+var FPS = 30;
+setInterval(function() {
+  update();
+  draw();
+}, 1000/FPS);
+
+
+function update() {
+	if (landed == 0 && earthSize > 1.5 * canvas.width && 0 < earthX < (0.5 * canvas.width)  && 0 < earthY < (0.5 * canvas.height)) {
+		// console.log("You landed");
+		// window.alert("You landed!");
+		landed = 1;
+		window.location.href = "../missioncontrol/frame.html"
+		earthY = (canvas.width - 25)/ 2;
+		earthX = (canvas.height - 25) /2;
+		earthSize = 50;
+	}
+	earthY -= 0.02;
+	earthX -= 0.02;
+	earthSize = earthSize * 1.01;
+};
+
+function draw() {
+	context.clearRect(0, 0, windowWidth, windowHeight);
+    context.drawImage(img, earthY, earthX, earthSize, earthSize);
+    context.rotate(0.03*Math.PI/180);
+};
+
+</script>
+
+</body>
+</html>

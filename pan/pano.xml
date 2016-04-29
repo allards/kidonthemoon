@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node1">
+  <panorama id="node1">
+    <input levelbiashidpi="0.400" leveltilesize="510" overlap="1" leveltileurl="tiles/AP17_6_2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1056" levelingpitch="0" height="1056" levelbias="0.400">
+      <level preload="0" width="1056" height="1056" predecode="0"/>
+      <level preload="0" width="528" height="528" predecode="0"/>
+      <level preload="1" width="264" height="264" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" tilt="0" fov="70"/>
+      <min pan="-180" tilt="-32.6039" fov="5"/>
+      <max pan="180" tilt="32.6039" fov="120"/>
+    </view>
+    <userdata source="" datetime="" longitude="" title="" info="" comment="" latitude="" description="" tags="images" copyright="" author=""/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" borderalpha="1" width="180" bordercolor="0x000000" border="1" wordwrap="1" background="1" backgroundalpha="1" textalpha="1" backgroundcolor="0xffffff" height="20" textcolor="0x000000" borderradius="1"/>
+      <polystyle mode="0" borderalpha="1" bordercolor="0x0000ff" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" handcursor="1"/>
+      <polyhotspot id="Poly01" target="" title="" description="" url="">
+        <vertex pan="-23.63" tilt="-8.1"/>
+        <vertex pan="-27.57" tilt="-8.11"/>
+        <vertex pan="-28.86" tilt="-12.18"/>
+        <vertex pan="-28.64" tilt="-15.55"/>
+        <vertex pan="-22.7" tilt="-15.24"/>
+        <vertex pan="-22.43" tilt="-10.73"/>
+      </polyhotspot>
+      <polyhotspot id="Poly02" target="" title="" description="" url="">
+        <vertex pan="61.66" tilt="13.92"/>
+        <vertex pan="46.82" tilt="11.07"/>
+        <vertex pan="35.14" tilt="2.8"/>
+        <vertex pan="35.51" tilt="-0.32"/>
+        <vertex pan="38.79" tilt="-1.5"/>
+        <vertex pan="40.41" tilt="-7.39"/>
+        <vertex pan="53.97" tilt="-5.69"/>
+        <vertex pan="75.2" tilt="-0.64"/>
+        <vertex pan="81.08" tilt="1.62"/>
+        <vertex pan="71.6" tilt="5.05"/>
+        <vertex pan="68" tilt="6.42"/>
+        <vertex pan="65.29" tilt="9.28"/>
+      </polyhotspot>
+      <hotspot id="Point04" target="0/0/50.652" pan="106.41" title="Apollo11" skinid="ht_node" description="" tilt="22.9" url="{node15}"/>
+      <hotspot id="Point05" target="175.099/-1.90846/50.652" pan="-135.5" title="Apollo15" skinid="ht_node" description="" tilt="20.63" url="{node14}"/>
+      <hotspot id="Point01" target="27.6471/0/54.4689" pan="-36.21" title="Apollo15" skinid="ht_node" description="" tilt="16.28" url="{node14}"/>
+      <hotspot id="Point02" target="" pan="-99.58" title="Back To Earth!" skinid="ht_url" description="" tilt="15.81" url=""/>
+    </hotspots>
+    <media>
+      <video loop="-1" field="90.000" fov="30.000" ambientlevel="0.000" roty="0.000" stretch="1.000" height="240" level="1.000" clickmode="1" pan="-33.420" id="Element01" rotz="0.000" pansize="10.000" mode="3" tiltsize="10.000" tilt="-9.920" rotx="-90.000" width="320">
+        <source url="media/Video_I Was Strolling On The Moon One Day.mp4"/>
+      </video>
+      <image id="Element03" rotz="0.000" rotx="-90.000" pan="56.390" width="564" roty="0.000" tilt="2.870" stretch="1.000" fov="30.000" height="564" clickmode="4">
+        <source url="media/image - Moon Rock.jpg"/>
+      </image>
+      <lensflare id="Lensflare01" color="0xffffff" type="11" pan="49.46" alpha="80" tilt="31.77" blinding="50"/>
+    </media>
+    <transition enabled="1" blendtime="2" type="crossdissolve" zoomoutpause="1" blendcolor="0x000000" zoomout="2" zoomspeed="2" zoomin="2" softedge="0" zoomfov="20"/>
+    <soundstransition enabled="1" crossfade="0" transitiontime="2"/>
+    <control lockedkeyboardzoom="0" contextfullscreen="0" sensitivity="8" dblclickfullscreen="0" hideabout="0" lockedmouse="0" speedwheel="1" invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedwheel="0" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node14">
+    <input levelbiashidpi="0.400" leveltilesize="510" overlap="1" leveltileurl="tiles/AP15_7_tiff/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="396" levelingpitch="0" height="396" levelbias="0.400">
+      <level preload="1" width="396" height="396" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" tilt="0" fov="70"/>
+      <min pan="-180" tilt="-27.2345" fov="5"/>
+      <max pan="180" tilt="27.2345" fov="120"/>
+    </view>
+    <userdata source="" datetime="" longitude="" title="AppleMark" info="" comment="" latitude="" description="" tags="images" copyright="" author=""/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" borderalpha="1" width="180" bordercolor="0x000000" border="1" wordwrap="1" background="1" backgroundalpha="1" textalpha="1" backgroundcolor="0xffffff" height="20" textcolor="0x000000" borderradius="1"/>
+      <polystyle mode="0" borderalpha="1" bordercolor="0x0000ff" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" handcursor="1"/>
+      <hotspot id="Point01" target="32.2642/0/65.2079" pan="122.87" title="Apollo17" skinid="ht_node" description="" tilt="14.77" url="{node1}"/>
+      <hotspot id="Point02" target="0/0/50.652" pan="-48.86" title="Apollo11" skinid="ht_node" description="" tilt="20.39" url="{node15}"/>
+      <hotspot id="Point03" target="" pan="39.53" title="Back To Earth!" skinid="ht_url" description="" tilt="21.81" url=""/>
+    </hotspots>
+    <media/>
+    <transition enabled="1" blendtime="2" type="crossdissolve" zoomoutpause="1" blendcolor="0x000000" zoomout="2" zoomspeed="2" zoomin="2" softedge="0" zoomfov="20"/>
+    <soundstransition enabled="1" crossfade="0" transitiontime="2"/>
+    <control lockedkeyboardzoom="0" contextfullscreen="0" sensitivity="8" dblclickfullscreen="0" hideabout="0" lockedmouse="0" speedwheel="1" invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedwheel="0" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node15">
+    <input levelbiashidpi="0.400" leveltilesize="510" overlap="1" leveltileurl="tiles/AP11pan_tiff/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="936" levelingpitch="0" height="936" levelbias="0.400">
+      <level preload="0" width="936" height="936" predecode="0"/>
+      <level preload="1" width="468" height="468" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" tilt="0" fov="70"/>
+      <min pan="-180" tilt="-25.326" fov="5"/>
+      <max pan="180" tilt="25.326" fov="120"/>
+    </view>
+    <userdata source="" datetime="" longitude="" title="" info="" comment="" latitude="" description="" tags="images" copyright="" author=""/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" borderalpha="1" width="180" bordercolor="0x000000" border="1" wordwrap="1" background="1" backgroundalpha="1" textalpha="1" backgroundcolor="0xffffff" height="20" textcolor="0x000000" borderradius="1"/>
+      <polystyle mode="0" borderalpha="1" bordercolor="0x0000ff" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" handcursor="1"/>
+      <hotspot id="Point03" target="" pan="-98.07" title="Back to Earth!" skinid="ht_url" description="" tilt="16.18" url=""/>
+      <hotspot id="Point04" target="-109.807/0/65.2079" pan="-38.48" title="Apollo17" skinid="ht_node" description="" tilt="14.32" url="{node1}"/>
+      <hotspot id="Point05" target="155.845/0/54.4689" pan="123.37" title="Apollo15" skinid="ht_node" description="" tilt="18.98" url="{node14}"/>
+      <hotspot id="Point01" target="" pan="24.84" title="Click to Play!" skinid="ht_image" description="" tilt="17.17" url="images/"/>
+      <polyhotspot id="Poly01" target="" title="" description="" url="">
+        <vertex pan="22.88" tilt="19.84"/>
+        <vertex pan="3.71" tilt="19.35"/>
+        <vertex pan="1.66" tilt="4.43"/>
+        <vertex pan="20.47" tilt="6.24"/>
+        <vertex pan="29.45" tilt="5.83"/>
+        <vertex pan="36.38" tilt="9.92"/>
+        <vertex pan="36.48" tilt="18.21"/>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <video loop="-1" field="90.000" fov="34.594" ambientlevel="0.000" roty="0.000" stretch="1.000" height="360" level="1.000" clickmode="2" pan="17.320" id="Element01" rotz="0.000" pansize="10.000" mode="3" tiltsize="10.000" tilt="14.230" rotx="0.000" width="640">
+        <source url="media/Time to Shine - The Moon Song by StoryBots.mp4"/>
+      </video>
+      <lensflare id="Lensflare01" color="0xffffff" type="11" pan="-168.07" alpha="80" tilt="18.82" blinding="50"/>
+    </media>
+    <transition enabled="1" blendtime="2" type="crossdissolve" zoomoutpause="1" blendcolor="0x000000" zoomout="2" zoomspeed="2" zoomin="2" softedge="0" zoomfov="20"/>
+    <soundstransition enabled="1" crossfade="0" transitiontime="2"/>
+    <control lockedkeyboardzoom="0" contextfullscreen="0" sensitivity="8" dblclickfullscreen="0" hideabout="0" lockedmouse="0" speedwheel="1" invertwheel="0" simulatemass="1" lockedkeyboard="0" lockedwheel="0" invertcontrol="1"/>
+  </panorama>
+</tour>
